@@ -187,9 +187,9 @@ body{
 #grid-tilvalg {
     position: relative;
     display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 10%;
-    margin: 7.5%;
+    grid-template-columns: 47.5% 47.5%;
+    column-gap: 5%;
+    margin: 5%;
 }
 
 .containertilvalg{
@@ -198,16 +198,16 @@ body{
 }
 
 .tilvalgbeskrivelse{
-    width: 100%;
-    text-align: center;
+    width: 90%;
+    text-align: left;
     margin: 10px;
     font-size: 85%;
     color: #7A827D;
 }
 
 .tilvalgtekst{
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    width: 90%;
     min-height: 60px;
     font-size: 75%;
     color: #7A827D;
@@ -231,10 +231,54 @@ body{
   filter: brightness(60%);
 }
 
+/* ---- FOOTER - Kontaktinfo og SoMe Links ---- */
 
+#containerfooter{
+    background-color: #636A66;
+}
+
+#containerfooter{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 5%;
+    padding: 10%;
+    justify-content: center;
+}
+
+#containerkontakt, #containeråbningstider{
+    
+}
+
+.overskriftfooter{
+    font-size: 110%;
+    color: #fff;
+}
+
+.footertekst{
+    color: #fff;
+    font-size: 80%;
+    margin: 2% 0;
+}
+
+.footertekst a {
+    color: #fff;
+}
+
+/* SOME ikoner */
+
+#containersome{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    background-color: #636A66;
+    padding: 0 25% 5% ;
+}
+
+.someicon{
+    width: 70px;
+}
 
 @media only screen and (min-width: 1200px) {
-
 
     /* BUKETTER */
     
