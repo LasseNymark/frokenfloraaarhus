@@ -1,6 +1,7 @@
 /* ----- GLOBAL STYLING ----- */
 
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: '';
@@ -8,29 +9,29 @@ html, body{
 
 /* --- Globale Variabler --- */
 
-:root{
+:root {
     --bgc1: orange;
-    --bgc2:black;
+    --bgc2: black;
 }
 
-body{
+body {
     font-family: 'Muli';
 }
 
 /* ---- SECTIONS STYLING ---- */
 
-.center{
+.center {
     text-align: center;
 }
 
-.overskrift{
+.overskrift {
     text-align: center;
     color: #313831;
     margin-bottom: 0;
     margin-top: 50px;
 }
 
-.overskrifttekst{
+.overskrifttekst {
     text-align: center;
     color: #7A827D;
     font-size: 80%;
@@ -39,7 +40,11 @@ body{
 
 /* ---- HEADER ---- */
 
-#logo{
+.menu {
+    display: none;
+}
+
+#logo {
     position: relative;
     width: 25%;
     margin: 20px 37.5% 0;
@@ -48,11 +53,11 @@ body{
 
 /* BURGER */
 
-#burger{
+#burger {
     position: absolute;
     width: 7%;
     z-index: 2;
-    top: 8%; 
+    top: 6%;
     right: 8%;
 }
 
@@ -86,19 +91,19 @@ body{
     margin: 7.5%;
 }
 
-#imgbuket{
+#imgbuket {
     width: 100%;
 }
 
-.containerbuketter p{
+.containerbuketter p {
     width: 100%;
     margin: 0;
-    text-align: left; 
+    text-align: left;
     color: #636A66;
     font-size: 80%;
 }
 
-.buketpris{
+.buketpris {
     color: #636A66;
     font-size: 80%;
 }
@@ -106,14 +111,15 @@ body{
 /* Hide the browser's default radio button */
 
 .containerbuketter input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 /* When the radio button is checked, add a blue background */
+
 .containerbuketter input:checked ~ #imgbuket {
-  filter: brightness(60%);
+    filter: brightness(60%);
 }
 
 /* ---- NUANCER ---- */
@@ -127,36 +133,35 @@ body{
     margin: 10%;
 }
 
-.containernuancer{
+.containernuancer {
     display: grid;
     justify-items: center;
 }
 
-.containernuancer p{
+.containernuancer p {
     text-align: center;
     font-size: 14px;
 }
 
-.imgnuancer{
+.imgnuancer {
     width: 55%;
 }
 
 /* Hide the browser's default radio button */
 
 .containernuancer input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 /* When the radio button is checked, add a background */
+
 .containernuancer input:checked ~ .imgnuancer {
-  filter: brightness(60%);
+    filter: brightness(60%);
 }
 
-.containernuancer input:checked ~ p {
-  
-}
+.containernuancer input:checked ~ p {}
 
 /* ---- STØRRELSER ---- */
 
@@ -168,37 +173,38 @@ body{
     margin: 5%;
 }
 
-.containerstørrelser{
+.containerstørrelser {
     display: grid;
     justify-items: center;
 }
 
-.størrelserbeskrivelse{
+.størrelserbeskrivelse {
     width: 100%;
     text-align: center;
     font-size: 80%;
     color: #7A827D;
 }
 
-.strpris{
+.strpris {
     font-size: 85%;
 }
 
-.imgstørrelser{
+.imgstørrelser {
     width: 80%;
 }
 
 /* Hide the browser's default radio button */
 
 .containerstørrelser input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 /* When the radio button is checked, add a blue background */
+
 .containerstørrelser input:checked ~ .imgstørrelser {
-  filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 /* ---- TILVALG ---- */
@@ -211,12 +217,12 @@ body{
     margin: 5%;
 }
 
-.containertilvalg{
+.containertilvalg {
     display: grid;
     justify-items: center;
 }
 
-.tilvalgbeskrivelse{
+.tilvalgbeskrivelse {
     width: 90%;
     text-align: left;
     margin: 10px;
@@ -224,7 +230,7 @@ body{
     color: #7A827D;
 }
 
-.tilvalgtekst{
+.tilvalgtekst {
     text-align: left;
     width: 90%;
     min-height: 60px;
@@ -233,50 +239,50 @@ body{
     margin-top: 0;
 }
 
-.imgtilvalg{
+.imgtilvalg {
     width: 90%;
 }
 
 /* Hide the browser's default radio button */
 
 .containertilvalg input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 /* When the radio button is checked, add a blue background */
+
 .containertilvalg input:checked ~ .imgtilvalg {
-  filter: brightness(60%);
+    filter: brightness(60%);
 }
 
 /* ---- FOOTER - Kontaktinfo og SoMe Links ---- */
 
-#containerfooter{
+#containerfooter {
     background-color: #636A66;
     font-weight: 200;
 }
 
-#containerfooter{
+#containerfooter {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 5%;
-    padding: 5%;
+    padding: 5% 5% 5% 10%;
     justify-content: center;
 }
 
-#containerkontakt, #containeråbningstider{
-    
-}
+#containerkontakt,
+#containeråbningstider {}
 
-.overskriftfooter{
+.overskriftfooter {
     font-size: 110%;
     color: #fff;
 }
 
-.footertekst{
+.footertekst {
     color: #fff;
-    font-size: 80%;
+    font-size: 70%;
     margin: 2% 0;
 }
 
@@ -286,33 +292,202 @@ body{
 
 /* SOME ikoner */
 
-#containersome{
+#containersome {
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
     background-color: #636A66;
-    padding: 0 25% 5% ;
+    padding: 0 25% 5%;
 }
 
-.someicon{
-    width: 70px;
+.someicon {
+    width: 50px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 700px) {
+
+    /* --- HEADER --- */
+    #logo {
+        width: 15%;
+        margin: 2% 42.5% 0;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    /* Navigation */
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .navigation {
+        float: left;
+        list-style: none;
+        color: #313831;
+        margin: 0 2%;
+        justify-content: center;
+        font-weight: 300;
+    }
+
+    #bestilling {
+        color: #E1BC9F;
+    }
+
+    /* --- INTROTEKST OG BILLEDE --- */
+    #sec1 {
+        background-image: url(../images/flowers.jpg);
+        height: 220px;
+    }
+
+    #sec1 h1 {
+        padding: 5% 25% 0;
+    }
+
+    #sec1 p {
+        padding: 1% 20% 0;
+        line-height: 1.7;
+    }
+
+    /* -- OVERSKRIFTTEKSTER OG TEKSTER DERTIL */
+    .overskrift {
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 20px;
+        font-size: 100%;
+    }
+
+    .overskrifttekst {
+        text-align: left;
+        margin-left: 15%;
+        font-size: 75%;
+    }
 
     /* BUKETTER */
-    
-/* On mouse-over, add a grey background color */
-.containerbuketter:hover input ~ #imgbuket {
-  opacity: 0.5;
-} 
-    
-    /*STØRRELSER*/
-    
-/* On mouse-over, add a grey background color */
-.containerstørrelser:hover input ~ #imgstørrelser {
-  opacity: 0.5;
+    #grid-buketter {
+        display: grid;
+        grid-template-columns: 22.75% 22.75% 22.75% 22.75%;
+        grid-gap: 3%;
+        margin: 2% 15% 0;
+    }
+
+    #imgbuket {
+        width: 100%;
+    }
+
+    .containerbuketter p {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        color: #636A66;
+        font-size: 80%;
+    }
+
+    .buketpris {
+        color: #636A66;
+        font-size: 80%;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containerbuketter:hover input ~ #imgbuket {
+        opacity: 0.5;
+    }
+
+    /* --- NUANCER --- */
+    #grid-nuancer {
+        grid-template-columns: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
+        column-gap: 0;
+        width: auto;
+        margin: 0 15%;
+    }
+
+    .containernuancer {
+        margin-top: 10px;
+    }
+
+    .containernuancer p {
+        font-size: 8px;
+        font-weight: 300;
+    }
+
+    .imgnuancer {
+        width: 45%;
+    }
+
+    /* --- STØRRELSER --- */
+    #grid-størrelser {
+        margin: 30px 20% 0;
+    }
+
+    .imgstørrelser {
+        width: 70%;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containerstørrelser:hover input ~ #imgstørrelser {
+        opacity: 0.5;
+    }
+
+    /* --- TILVALG --- */
+    #grid-tilvalg {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        column-gap: 0;
+        margin: 20px 15% 0;
+    }
+
+    .tilvalgbeskrivelse {
+        width: 80%;
+        font-size: 55%;
+    }
+
+    .tilvalgtekst {
+        width: 80%;
+        min-height: 30px;
+        font-size: 45%;
+    }
+
+    .imgtilvalg {
+        width: 80%;
+    }
+
 }
+
+@media only screen and (min-width: 1180px) {
+
+    /* NUANCER */
+    .containernuancer p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    /* STØRRELSER */
+
+    #grid-størrelser {
+        margin: 30px 25% 0;
+    }
+
+    .imgstørrelser {
+        width: 60%;
+    }
+    
+    /* TILVALG */
+    .tilvalgbeskrivelse {
+        width: 85%;
+        font-size: 75%;
+    }
+
+    .tilvalgtekst {
+        width: 85%;
+        font-size: 65%;
+    }
+
+    .imgtilvalg {
+        width: 85%;
+    }
+
+
 }
-    
-    
