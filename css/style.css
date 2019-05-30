@@ -9,11 +9,6 @@ body {
 
 /* --- Globale Variabler --- */
 
-:root {
-    --bgc1: orange;
-    --bgc2: black;
-}
-
 body {
     font-family: 'Muli';
 }
@@ -91,7 +86,7 @@ body {
     margin: 7.5%;
 }
 
-#imgbuket {
+.imgbuket {
     width: 100%;
 }
 
@@ -118,7 +113,7 @@ body {
 
 /* When the radio button is checked, add a blue background */
 
-.containerbuketter input:checked ~ #imgbuket {
+.containerbuketter input:checked ~ .imgbuket {
     filter: brightness(60%);
 }
 
@@ -138,9 +133,10 @@ body {
     justify-items: center;
 }
 
-.containernuancer p {
+.containernuancer span {
     text-align: center;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .imgnuancer {
@@ -158,10 +154,12 @@ body {
 /* When the radio button is checked, add a background */
 
 .containernuancer input:checked ~ .imgnuancer {
-    filter: brightness(60%);
+    filter: brightness(90%);
+    border: 2px solid #00cbff;
+    border-radius: 50%;
 }
 
-.containernuancer input:checked ~ p {}
+.containernuancer input:checked ~ span {}
 
 /* ---- STØRRELSER ---- */
 
@@ -169,7 +167,6 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-gap: %;
     margin: 5%;
 }
 
@@ -373,7 +370,7 @@ body {
         margin: 2% 15% 0;
     }
 
-    #imgbuket {
+    .imgbuket {
         width: 100%;
     }
 
@@ -391,8 +388,8 @@ body {
     }
 
     /* On mouse-over, add a grey background color */
-    .containerbuketter:hover input ~ #imgbuket {
-        opacity: 0.5;
+    .containerbuketter:hover input ~ .imgbuket {
+        opacity: 0.75;
     }
 
     /* --- NUANCER --- */
@@ -407,13 +404,18 @@ body {
         margin-top: 10px;
     }
 
-    .containernuancer p {
+    .containernuancer span {
         font-size: 8px;
         font-weight: 300;
     }
 
     .imgnuancer {
         width: 45%;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containernuancer:hover input ~ .imgnuancer {
+        opacity: 0.75;
     }
 
     /* --- STØRRELSER --- */
@@ -426,8 +428,8 @@ body {
     }
 
     /* On mouse-over, add a grey background color */
-    .containerstørrelser:hover input ~ #imgstørrelser {
-        opacity: 0.5;
+    .containerstørrelser:hover input ~ .imgstørrelser {
+        opacity: 0.7;
     }
 
     /* --- TILVALG --- */
@@ -452,19 +454,24 @@ body {
         width: 100%;
     }
 
+    /* On mouse-over, add a grey background color */
+    .containertilvalg:hover input ~ .imgtilvalg {
+        opacity: 0.7;
+    }
+
+    /* --- FOOTER --- */
 }
 
 @media only screen and (min-width: 1180px) {
 
     /* NUANCER */
-    .containernuancer p {
+    .containernuancer span {
         text-align: center;
         font-size: 14px;
         font-weight: 300;
     }
-    
-    /* STØRRELSER */
 
+    /* STØRRELSER */
     #grid-størrelser {
         margin: 30px 25% 0;
     }
@@ -472,9 +479,8 @@ body {
     .imgstørrelser {
         width: 60%;
     }
-    
+
     /* TILVALG */
-    
     .tilvalgbeskrivelse {
         width: 100%;
         font-size: 75%;
