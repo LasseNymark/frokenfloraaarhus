@@ -9,12 +9,16 @@
 </head>
 
 <body>
+   
+   <!-- ---- HEADER - BURGER OG LOGO ---- -->
 
    <header>
 
         logo burger
 
     </header>
+        
+        <!-- ---- INTROBILLEDE MED TEKST ---- -->
 
         <!–– Section 1 - heading og introtekst ––>
 
@@ -25,6 +29,8 @@
             <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias minus debitis eaque natus et rem, sunt iusto placeat voluptatibus!</p>
 
         </section>
+        
+        <!-- ---- BUKETTYPER ---- -->
 
 <div id="buketter">
     
@@ -32,24 +38,32 @@
     <p class="overskrifttekst">Vælg den buketopsætning du ønsker </p>
 
     <form id="grid-buketter">
+      
+      <!-- Buket 1 - Den høje - fra 175 kr -->
        
         <label class="containerbuketter">
             <input name="product" value="175" type="radio" onclick="totalIt()"/>
             <img id="imgbuket" src="images/buket1.jpg">
             <p class="buketbeskrivelse">Den høje <span class="buketpris"> - fra 175 kr </span></p>
         </label>
+        
+        <!-- Buket 2 - Den tætte - fra 250 kr -->
 
         <label class="containerbuketter">
             <input name="product" value="250" type="radio" onclick="totalIt()"/>
             <img id="imgbuket" src="images/buket2.jpg">
             <p class="buketbeskrivelse">Den tætte <span class="buketpris"> - fra 250 kr </span></p>
         </label>
+        
+        <!-- Buket 2 - Den vilde - fra 300 kr -->
 
         <label class="containerbuketter">
             <input name="product" value="300" type="radio" onclick="totalIt()"/>
             <img id="imgbuket" src="images/buket3.jpg">
             <p class="buketbeskrivelse">Den vilde <span class="buketpris"> - fra 300 kr </span></p>
         </label>
+        
+        <!-- Buket 2 - Den løse - fra 200 kr -->
         
         <label class="containerbuketter">
             <input name="product" value="200" type="radio" onclick="totalIt()"/>
@@ -60,25 +74,35 @@
     </form>
     
 </div>
+   
+   <!-- ---- NUANCER ---- -->
     
 <div id="nuancer">
+   
+   <!-- Overskrift -->
     
     <h2 class="overskrift">Vælg nuancer</h2>
     <p class="overskrifttekst">Floristen sammensætter buketten efter dine farvevalg </p>
 
     <form id="grid-nuancer">
+      
+      <!-- Dekoratørens valg -->
        
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/bl%C3%A5lilla.png">
             <p class="nuancerbeskrivelse">Dekoratørens <br>valg </p>
         </label>
+        
+        <!-- Blålilla/hvide nuancer valg -->
 
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/bl%C3%A5lilla.png">
             <p class="nuancerbeskrivelse">Blålilla/hvide <br> nuancer</p>
         </label>
+        
+        <!-- Hvide/lyse nuancer -->
 
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
@@ -86,11 +110,15 @@
             <p class="nuancerbeskrivelse">Hvide/lyse <br> nuancer</p>
         </label>
         
+        <!-- Lyserøde nuancer -->
+        
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/lyser%C3%B8de.png">
             <p class="nuancerbeskrivelse">Lyserøde <br> nuancer</p>
         </label>
+        
+        <!-- Lime/Rosa nuancer -->
         
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
@@ -98,11 +126,15 @@
             <p class="nuancerbeskrivelse">Lime/rosa <br> nuancer</p>
         </label>
         
+        <!-- Orange Nuancer -->
+        
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/orange.png">
             <p class="nuancerbeskrivelse">Orange <br> Nuancer</p>
         </label>
+        
+        <!-- Lys lilla/lime/hvide nuancer -->
         
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
@@ -110,11 +142,15 @@
             <p class="nuancerbeskrivelse">Lys lilla/ <br>  lime/hvid</p>
         </label>
         
+        <!-- Røde nuancer -->
+        
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/r%C3%B8de.png">
             <p class="nuancerbeskrivelse">Røde <br> ruancer</p>
         </label>
+        
+        <!-- Røde/hvide nuancer -->
         
         <label class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
@@ -125,43 +161,59 @@
     </form>
     
 </div>
+   
+   <!-- ---- STØRRELSER ---- -->
     
 <div>
+   
+   <!-- Overskrift -->
     
     <h2 class="overskrift">Vælg størrelse</h2>
     <p class="overskrifttekst">Vælg mellem en lille, mellem eller stor buket</p>
 
     <form id="grid-størrelser" >
+        
+        <!-- Størrelse 1 - Den lille - +0kr -->
 
         <label class="containerstørrelser">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgstørrelser" src="images/lille.png">
-            <p class="størrelserbeskrivelse">Lille <br> + 0 kr.</p>
+            <p class="størrelserbeskrivelse">Lille <br><span class="strpris"> +0 kr.</span></p>
         </label>
+        
+        <!-- Størrelse 2 - Den mellem - +50kr -->
 
         <label class="containerstørrelser">
             <input name="product" value="50" type="radio" onclick="totalIt()"/>
             <img class="imgstørrelser" src="images/mellem.png">
-            <p class="størrelserbeskrivelse">Mellem <br> + 50 kr.</p>
+            <p class="størrelserbeskrivelse">Mellem <br> <span class="strpris"> +50 kr.</span> </p>
         </label>
+        
+        <!-- Størrelse 3 - Den store - +100kr -->
         
         <label class="containerstørrelser">
             <input name="product" value="100" type="radio" onclick="totalIt()"/>
             <img class="imgstørrelser" src="images/stor.png">
-            <p class="størrelsebeskrivelse">Stor <br> + 100 kr.</p>
+            <p class="størrelserbeskrivelse">Stor <br> <span class="strpris">+100 kr.</span></p>
         </label>
 
     </form>
 
 </div>
 
+<!-- ---- TILVALG ---- -->
+
 <div>
+   
+   <!-- Overskrift -->
     
     <h2 class="overskrift">Tilvalg (valgfri)</h2>
     <p class="overskrifttekst">Færdiggør din buket med kort, pynt eller noget helt tredje</p>
     
 
     <form id="grid-tilvalg" >
+        
+        <!-- Tilvalg 1 - Flag - +20kr -->
 
         <label class="containertilvalg">
             <input name="product" value="20" type="checkbox" onclick="totalIt()"/>
@@ -169,6 +221,8 @@
             <p class="tilvalgbeskrivelse">Flag +20 kr</p>
             <p class="tilvalgtekst">Ved dette tilvalg får du festlige flag tilføjet i din buket.</p>
         </label>
+        
+        <!-- Tilvalg 2 - Kort - +20kr -->
 
         <label class="containertilvalg">
             <input name="product" value="20" type="checkbox" onclick="totalIt()"/>
@@ -177,6 +231,8 @@
             <p class="tilvalgtekst">Tilkøb et fint kort hvori du selv kan skrive en personlig hilsen.</p>
         </label>
         
+        <!-- Tilvalg 3 - Chokolade - +50kr -->
+        
         <label class="containertilvalg">
             <input name="product" value="50" type="checkbox" onclick="totalIt()"/>
             <img class="imgtilvalg" src="images/choko1.png">
@@ -184,12 +240,16 @@
             <p class="tilvalgtekst">Giv en æske chokolade ved siden af sin buket (15 stk).</p>
         </label>
         
+        <!-- Tilvalg 4 - Vin - +75kr -->
+        
         <label class="containertilvalg">
             <input name="product" value="75" type="checkbox" onclick="totalIt()"/>
             <img class="imgtilvalg" src="images/vin1.png">
             <p class="tilvalgbeskrivelse">Vin +75 kr</p>
             <p class="tilvalgtekst">Tilkøb månedens vin. Vinen vil blive leveret i en flot gaveæske. </p>
         </label>
+        
+        <!-- Tilvalg 5 - Specialøl - +40kr -->
         
         <label class="containertilvalg">
             <input name="product" value="40" type="checkbox" onclick="totalIt()"/>
@@ -209,17 +269,17 @@
     Samlet pris
     <input class="what" value="Dkk 0.00" readonly="readonly" type="text" id="total"/>
     
-    <style>
-    
-        .what{
-            color: green;
-            background-color: orange;
-            border: none;
-            
-            
-        }
+    <footer>
         
-    </style>
+        <div>
+            
+            Kontakt info
+            
+            Facebook - instagram
+            
+        </div>
+        
+    </footer>
     
 </body>
 </html>

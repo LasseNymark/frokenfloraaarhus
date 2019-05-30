@@ -34,7 +34,7 @@ body{
     text-align: center;
     color: #7A827D;
     font-size: 80%;
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 /* ---- SECTION 1 - Introtekst ---- */
@@ -64,7 +64,7 @@ body{
     grid-template-columns: 45% 45%;
     grid-template-rows: 45% 45%;
     grid-gap: 10%;
-    margin: 5%;
+    margin: 7.5%;
 }
 
 #imgbuket{
@@ -76,6 +76,7 @@ body{
     margin: 0;
     text-align: left; 
     color: #636A66;
+    font-size: 80%;
 }
 
 .buketpris{
@@ -156,14 +157,16 @@ body{
 .størrelserbeskrivelse{
     width: 100%;
     text-align: center;
+    font-size: 80%;
+    color: #7A827D;
+}
+
+.strpris{
+    font-size: 85%;
 }
 
 .imgstørrelser{
     width: 80%;
-}
-
-.containerstørrelser p{
-    text-align: center; 
 }
 
 /* Hide the browser's default radio button */
@@ -184,31 +187,35 @@ body{
 #grid-tilvalg {
     position: relative;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    margin: 7.5%;
 }
 
 .containertilvalg{
     display: grid;
     justify-items: center;
-    margin: 5%;
 }
 
 .tilvalgbeskrivelse{
     width: 100%;
     text-align: center;
     margin: 10px;
+    font-size: 85%;
+    color: #7A827D;
 }
 
 .tilvalgtekst{
-    height: 80px;
+    text-align: center;
+    width: 100%;
+    min-height: 60px;
+    font-size: 75%;
+    color: #7A827D;
+    margin-top: 0;
 }
 
 .imgtilvalg{
-    width: 80%;
-}
-
-.containertilvalg p{
-    text-align: center; 
+    width: 90%;
 }
 
 /* Hide the browser's default radio button */
