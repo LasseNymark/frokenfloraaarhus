@@ -37,6 +37,25 @@ body{
     margin-top: 5px;
 }
 
+/* ---- HEADER ---- */
+
+#logo{
+    position: relative;
+    width: 25%;
+    margin: 20px 37.5% 0;
+    z-index: 1;
+}
+
+/* BURGER */
+
+#burger{
+    position: absolute;
+    width: 7%;
+    z-index: 2;
+    top: 8%; 
+    right: 8%;
+}
+
 /* ---- SECTION 1 - Introtekst ---- */
 
 #sec1 {
@@ -235,13 +254,14 @@ body{
 
 #containerfooter{
     background-color: #636A66;
+    font-weight: 200;
 }
 
 #containerfooter{
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 5%;
-    padding: 10%;
+    padding: 5%;
     justify-content: center;
 }
 
