@@ -1,0 +1,247 @@
+/* ----- GLOBAL STYLING ----- */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: '';
+}
+
+/* --- Globale Variabler --- */
+
+:root{
+    --bgc1: orange;
+    --bgc2:black;
+}
+
+body{
+    font-family: 'Muli';
+}
+
+/* ---- SECTIONS STYLING ---- */
+
+.center{
+    text-align: center;
+}
+
+.overskrift{
+    text-align: center;
+    color: #313831;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.overskrifttekst{
+    text-align: center;
+    color: #7A827D;
+    font-size: 80%;
+    margin-top: 0;
+}
+
+/* ---- SECTION 1 - Introtekst ---- */
+
+#sec1 {
+    background-image: url(../images/flowers.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sec1 h1 {
+    padding: 25px 15px 0 15px;
+    color: #fff;
+}
+
+#sec1 p {
+    padding: 0 45px 25px;
+    color: #fff;
+}
+
+/* ---- BUKETTER ---- */
+
+#grid-buketter {
+    position: relative;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-gap: 10%;
+    margin: 5%;
+}
+
+#imgbuket{
+    width: 100%;
+}
+
+.containerbuketter p{
+    width: 100%;
+    margin: 0;
+    text-align: left; 
+    color: #636A66;
+}
+
+.buketpris{
+    color: #636A66;
+    font-size: 80%;
+}
+
+/* Hide the browser's default radio button */
+
+.containerbuketter input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerbuketter input:checked ~ #imgbuket {
+  filter: brightness(60%);
+}
+
+/* ---- NUANCER ---- */
+
+#grid-nuancer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    grid-gap: 5%;
+    margin: 10%;
+}
+
+.containernuancer{
+    display: grid;
+    justify-items: center;
+}
+
+.containernuancer p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.imgnuancer{
+    width: 55%;
+}
+
+/* Hide the browser's default radio button */
+
+.containernuancer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* When the radio button is checked, add a background */
+.containernuancer input:checked ~ .imgnuancer {
+  filter: brightness(60%);
+}
+
+.containernuancer input:checked ~ p {
+  
+}
+
+/* ---- STØRRELSER ---- */
+
+#grid-størrelser {
+    position: relative;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: %;
+    margin: 5%;
+}
+
+.containerstørrelser{
+    display: grid;
+    justify-items: center;
+}
+
+.størrelserbeskrivelse{
+    width: 100%;
+    text-align: center;
+}
+
+.imgstørrelser{
+    width: 80%;
+}
+
+.containerstørrelser p{
+    text-align: center; 
+}
+
+/* Hide the browser's default radio button */
+
+.containerstørrelser input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerstørrelser input:checked ~ .imgstørrelser {
+  filter: brightness(80%);
+}
+
+/* ---- TILVALG ---- */
+
+#grid-tilvalg {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.containertilvalg{
+    display: grid;
+    justify-items: center;
+    margin: 5%;
+}
+
+.tilvalgbeskrivelse{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+.tilvalgtekst{
+    height: 80px;
+}
+
+.imgtilvalg{
+    width: 80%;
+}
+
+.containertilvalg p{
+    text-align: center; 
+}
+
+/* Hide the browser's default radio button */
+
+.containertilvalg input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* When the radio button is checked, add a blue background */
+.containertilvalg input:checked ~ .imgtilvalg {
+  filter: brightness(60%);
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+
+    /* BUKETTER */
+    
+/* On mouse-over, add a grey background color */
+.containerbuketter:hover input ~ #imgbuket {
+  opacity: 0.5;
+} 
+    
+    /*STØRRELSER*/
+    
+/* On mouse-over, add a grey background color */
+.containerstørrelser:hover input ~ #imgstørrelser {
+  opacity: 0.5;
+}
+}
+    
+    
