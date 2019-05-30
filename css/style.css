@@ -432,24 +432,24 @@ body {
 
     /* --- TILVALG --- */
     #grid-tilvalg {
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        column-gap: 0;
+        grid-template-columns: 16% 16% 16% 16% 16%;
+        column-gap: 5%;
         margin: 20px 15% 0;
     }
 
     .tilvalgbeskrivelse {
-        width: 80%;
+        width: 100%;
         font-size: 55%;
     }
 
     .tilvalgtekst {
-        width: 80%;
+        width: 100%;
         min-height: 30px;
         font-size: 45%;
     }
 
     .imgtilvalg {
-        width: 80%;
+        width: 100%;
     }
 
 }
@@ -474,18 +474,19 @@ body {
     }
     
     /* TILVALG */
+    
     .tilvalgbeskrivelse {
-        width: 85%;
+        width: 100%;
         font-size: 75%;
     }
 
     .tilvalgtekst {
-        width: 85%;
+        width: 100%;
         font-size: 65%;
     }
 
     .imgtilvalg {
-        width: 85%;
+        width: 100%;
     }
 
 
