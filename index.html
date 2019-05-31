@@ -55,7 +55,7 @@
 
             <!-- Buket 1 - Den høje - fra 175 kr -->
 
-            <label class="containerbuketter">
+        <label onclick="buket1()" class="containerbuketter">
             <input name="product" value="175" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket1.jpg" alt="høj buket">
             <span class="buketbeskrivelse">Den høje <span class="buketpris"> - fra 175 kr </span></span>
@@ -63,23 +63,23 @@
 
             <!-- Buket 2 - Den tætte - fra 250 kr -->
 
-            <label class="containerbuketter">
+        <label onclick="buket2()" class="containerbuketter">
             <input name="product" value="250" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket2.jpg" alt="tæt buket">
             <span class="buketbeskrivelse">Den tætte <span class="buketpris"> - fra 250 kr </span></span>
         </label>
 
-            <!-- Buket 2 - Den vilde - fra 300 kr -->
+            <!-- Buket 3 - Den vilde - fra 300 kr -->
 
-            <label class="containerbuketter">
+        <label onclick="buket3()" class="containerbuketter">
             <input name="product" value="300" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket3.jpg" alt="vild buket">
             <span class="buketbeskrivelse">Den vilde <span class="buketpris"> - fra 300 kr </span></span>
         </label>
 
-            <!-- Buket 2 - Den løse - fra 200 kr -->
+            <!-- Buket 4 - Den løse - fra 200 kr -->
 
-            <label class="containerbuketter">
+        <label onclick="buket4()" class="containerbuketter">
             <input name="product" value="200" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket4.jpg" alt="løs buket">
             <span class="buketbeskrivelse">Den løse <span class="buketpris"> - fra 200 kr </span></span>
@@ -102,7 +102,7 @@
 
             <!-- Dekoratørens valg -->
 
-            <label class="containernuancer">
+        <label onclick="nuance1()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/bl%C3%A5lilla.png" alt="dekoratørens valg">
             <span class="nuancerbeskrivelse">Dekoratørens <br>valg </span>
@@ -110,7 +110,7 @@
 
             <!-- Blålilla/hvide nuancer valg -->
 
-            <label class="containernuancer">
+        <label onclick="nuance2()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/bl%C3%A5lilla.png" alt="blålilla/hvide nuancer">
             <span class="nuancerbeskrivelse">Blålilla/hvide <br> nuancer</span>
@@ -118,7 +118,7 @@
 
             <!-- Hvide/lyse nuancer -->
 
-            <label class="containernuancer">
+            <label onclick="nuance3()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/lyse.png" alt="hvide/lyse nuancer">
             <span class="nuancerbeskrivelse">Hvide/lyse <br> nuancer</span>
@@ -126,7 +126,7 @@
 
             <!-- Lyserøde nuancer -->
 
-            <label class="containernuancer">
+            <label onclick="nuance4()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/lyser%C3%B8de.png" alt="lyserøde nuancer">
             <span class="nuancerbeskrivelse">Lyserøde <br> nuancer</span>
@@ -134,7 +134,7 @@
 
             <!-- Lime/Rosa nuancer -->
 
-            <label class="containernuancer">
+        <label onclick="nuance5()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/lime.png" alt="lime/rosa nuancer">
             <span class="nuancerbeskrivelse">Lime/rosa <br> nuancer</span>
@@ -142,7 +142,7 @@
 
             <!-- Orange Nuancer -->
 
-            <label class="containernuancer">
+            <label onclick="nuance6()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/orange.png" alt="orange nuancer">
             <span class="nuancerbeskrivelse">Orange <br> Nuancer</span>
@@ -150,7 +150,7 @@
 
             <!-- Lys lilla/lime/hvide nuancer -->
 
-            <label class="containernuancer">
+            <label onclick="nuance7()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/lyselilla.png" alt="lilla/lime/hvide nuancer">
             <span class="nuancerbeskrivelse">Lys lilla/ <br>  lime/hvid</span>
@@ -158,7 +158,7 @@
 
             <!-- Røde nuancer -->
 
-            <label class="containernuancer">
+            <label onclick="nuance8()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/r%C3%B8de.png" alt="røde nuancer">
             <span class="nuancerbeskrivelse">Røde <br> ruancer</span>
@@ -166,7 +166,7 @@
 
             <!-- Røde/hvide nuancer -->
 
-            <label class="containernuancer">
+            <label onclick="nuance9()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/r%C3%B8dhvide.png" alt="røde/hvide nuancer">
             <span class="nuancerbeskrivelse">Røde/ hvide <br> nuancer</span>
@@ -189,7 +189,7 @@
 
             <!-- Størrelse 1 - Den lille - +0kr -->
 
-            <label class="containerstørrelser">
+            <label onclick="størrelse1()" class="containerstørrelser">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgstørrelser" src="images/lille.png" alt="lille størrelse">
             <span class="størrelserbeskrivelse">Lille <br><span class="strpris"> +0 kr.</span></span>
@@ -197,7 +197,7 @@
 
             <!-- Størrelse 2 - Den mellem - +50kr -->
 
-            <label class="containerstørrelser">
+            <label onclick="størrelse2()" class="containerstørrelser">
             <input name="product" value="50" type="radio" onclick="totalIt()"/>
             <img class="imgstørrelser" src="images/mellem.png" alt="mellem størrelse">
             <span class="størrelserbeskrivelse">Mellem <br> <span class="strpris"> +50 kr.</span> </span>
@@ -205,7 +205,7 @@
 
             <!-- Størrelse 3 - Den store - +100kr -->
 
-            <label class="containerstørrelser">
+            <label onclick="størrelse3()" class="containerstørrelser">
             <input name="product" value="100" type="radio" onclick="totalIt()"/>
             <img class="imgstørrelser" src="images/stor.png" alt="stor størrelse">
             <span class="størrelserbeskrivelse">Stor <br> <span class="strpris">+100 kr.</span></span>
@@ -228,9 +228,11 @@
         <form id="grid-tilvalg">
 
             <!-- Tilvalg 1 - Flag - +20kr -->
+            
+            
 
-            <label class="containertilvalg">
-            <input name="product" value="20" type="checkbox" onclick="totalIt()"/>
+        <label class="containertilvalg">
+            <input id="kurvflag" name="product" value="20" type="checkbox" onclick="totalIt(); tilvalg1();"/>
             <img class="imgtilvalg" src="images/flag2.png" alt="tilvælg flag">
             <span class="tilvalgbeskrivelse">Flag +20 kr</span>
             <span class="tilvalgtekst">Ved dette tilvalg får du festlige flag tilføjet i din buket.</span>
@@ -239,7 +241,7 @@
             <!-- Tilvalg 2 - Kort - +20kr -->
 
             <label class="containertilvalg">
-            <input name="product" value="20" type="checkbox" onclick="totalIt()"/>
+            <input id="kurvkort" name="product" value="20" type="checkbox" onclick="totalIt(); tilvalg2();"/>
             <img class="imgtilvalg" src="images/kort2.png" alt="tilvælg kort">
             <span class="tilvalgbeskrivelse">Kort +20 kr</span>
             <span class="tilvalgtekst">Tilkøb et fint kort hvori du selv kan skrive en personlig hilsen.</span>
@@ -248,7 +250,7 @@
             <!-- Tilvalg 3 - Chokolade - +50kr -->
 
             <label class="containertilvalg">
-            <input name="product" value="50" type="checkbox" onclick="totalIt()"/>
+            <input id="kurvchokolade" name="product" value="50" type="checkbox" onclick="totalIt(); tilvalg3();"/>
             <img class="imgtilvalg" src="images/choko2.png" alt="tilvælg chokolade">
             <span class="tilvalgbeskrivelse">Chokolade +50 kr</span>
             <span class="tilvalgtekst">Giv en æske chokolade ved siden af sin buket (15 stk).</span>
@@ -257,7 +259,7 @@
             <!-- Tilvalg 4 - Vin - +75kr -->
 
             <label class="containertilvalg">
-            <input name="product" value="75" type="checkbox" onclick="totalIt()"/>
+            <input id="kurvvin" name="product" value="75" type="checkbox" onclick="totalIt(); tilvalg4();"/>
             <img class="imgtilvalg" src="images/vin2.png" alt="tilvælg vin">
             <span class="tilvalgbeskrivelse">Vin +75 kr</span>
             <span class="tilvalgtekst">Tilkøb månedens vin. Vinen vil blive leveret i en flot gaveæske. </span>
@@ -266,7 +268,7 @@
             <!-- Tilvalg 5 - Specialøl - +40kr -->
 
             <label class="containertilvalg">
-            <input name="product" value="40" type="checkbox" onclick="totalIt()"/>
+            <input id="kurvspecialøl" name="product" value="40" type="checkbox" onclick="totalIt(); tilvalg5();"/>
             <img class="imgtilvalg" src="images/beer2.png" alt="tilvælg specialøl">
             <span class="tilvalgbeskrivelse">Specialøl +40 kr</span>
             <span class="tilvalgtekst">Tilkøb månedens specialøl. Øllen vil blive leveret i flot gaveæske.</span>
@@ -284,10 +286,17 @@
 
             <h3 class="overskrift overskriftpris">Din indkøbskurv</h3>
 
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
+               <div id="kurvindhold">
+               
+                <p id="kurvbuket">Bukettype: </p>
+
+                <p id="kurvnuance">Nuance: </p>
+
+                <p id="kurvstørrelse">Størrelse: </p>
+                
+                <p id="kurvtilvalg">Tilvalg: <span class="tilvalgnone" id="spanflag">+ Flag 20kr</span> <span class="tilvalgnone" id="spankort">+ Kort 20kr</span> <span class="tilvalgnone" id="spanchokolade">+ Chokolade 50kr</span> <span class="tilvalgnone" id="spanvin">+ Vin 75kr</span> <span class="tilvalgnone" id="spanspecialøl">+ Specialøl 50kr</span> </p>
+                
+                </div>
 
             <div id="containerpris">
 

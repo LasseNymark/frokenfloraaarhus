@@ -138,8 +138,7 @@ body {
     text-align: center;
     font-size: 14px;
     margin-top: 10px;
-            margin-bottom: 20px;
-
+    margin-bottom: 20px;
 }
 
 .imgnuancer {
@@ -262,7 +261,7 @@ body {
 #containerpris {
     display: flex;
     width: 70%;
-    margin: 5% 15%;
+    margin: 5% 15% 10%;
 }
 
 #samletpris {
@@ -278,12 +277,43 @@ body {
     color: #313831;
     font-weight: 500;
     font-size: 110%;
+    text-align: right;
 }
 
 .overskriftpris {
     font-weight: 600;
     margin-top: 0;
+    margin-bottom: 20px;
 }
+
+#kurvindhold{
+    margin: 0 15%;
+    color: #7A827D;
+}
+
+.tilvalgnone{
+    display: none;
+    color: #7A827D;
+    margin: 10px 0px 10px 70px;
+    float: right;
+    font-size: 80%;
+}
+
+
+#kurvnuance, #kurvbuket, #kurvstørrelse{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
 
 #betal {
     background-color: #E1BC9F;
