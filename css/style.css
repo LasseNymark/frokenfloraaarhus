@@ -137,6 +137,8 @@ body {
     text-align: center;
     font-size: 14px;
     margin-top: 10px;
+            margin-bottom: 20px;
+
 }
 
 .imgnuancer {
@@ -445,6 +447,7 @@ body {
 
     .containernuancer {
         margin-top: 10px;
+
     }
 
     .containernuancer span {
