@@ -276,32 +276,50 @@
 
     </div>
 
-    <div>
-        
-        <h3 class="overskrift overskriftpris">Din indkøbskurv</h3>
-        
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        
-        <div id="containerpris">
-        
-            <p id="samletpris">I ALT</p>
+    <!-- SAMLEDE PRIS/ KURV -->
 
-            <input class="pris" value="0.00 kr" readonly="readonly" type="text" id="total" />
+    <div id="containerkurv">
+        
+        <div id="flexpris" class="flexkurv">
+
+            <h3 class="overskrift overskriftpris">Din indkøbskurv</h3>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <div id="containerpris">
+
+                <p id="samletpris">I ALT</p>
+
+                <!-- PRIS i input -->
+
+                <input class="pris" value="0.00 kr" readonly="readonly" type="text" id="total" />
+
+            </div>
         
         </div>
-        
-        <p class="overskrift">Tilfreds med dit design?</p>
-        <p class="overskrifttekst">Fortsæt til betaling</p>
-        <button id="betal">FORTSÆT</button>
+
+        <!-- KLIK VIDERE -->
+
+        <div id="videre" class="flexkurv">
+
+            <p id="tilfreds" class="overskrift">Tilfreds med dit design?</p>
+            <p id="fortsæt" class="overskrifttekst">Fortsæt til betaling</p>
+            <button id="betal">FORTSÆT</button>
+
+        </div>
 
     </div>
+
+    <!-- FOOTER MED SOME OG KONTAKTOPLYSNINGER -->
 
     <footer>
 
         <div id="laptopfooter">
+
+            <!-- KONTAKTOPLYSNINGER -->
 
             <div id="containerfooter">
 
@@ -332,6 +350,8 @@
 
 
             </div>
+
+            <!-- SOME -->
 
             <div id="containersome">
 

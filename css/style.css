@@ -256,20 +256,20 @@ body {
 
 /* ---- KURV ---- */
 
-#containerpris{
+#containerpris {
     display: flex;
     width: 70%;
     margin: 5% 15%;
 }
 
-#samletpris{
+#samletpris {
     width: 70%;
     color: #313831;
     font-weight: 700;
     font-size: 110%;
 }
 
-.pris{
+.pris {
     width: 30%;
     border: none;
     color: #313831;
@@ -277,25 +277,25 @@ body {
     font-size: 110%;
 }
 
-.overskriftpris{
+.overskriftpris {
     font-weight: 600;
     margin-top: 0;
 }
 
-#betal{
+#betal {
     background-color: #E1BC9F;
     color: #fff;
     width: 30%;
     padding: 10px 15px;
     border: none;
-    margin: 10px 35% 30px;
+    margin: 10px 35% 40px;
     box-shadow: 0px 3px 10px grey;
 }
 
-
-
-
-
+#tilfreds{
+    margin-top: 0;
+    font-weight: 600;
+}
 
 /* ---- FOOTER - Kontaktinfo og SoMe Links ---- */
 
@@ -501,28 +501,72 @@ body {
     .containertilvalg:hover input ~ .imgtilvalg {
         opacity: 0.7;
     }
-
-    /* --- FOOTER --- */
     
-    #laptopfooter{
-        display: grid;
-        grid-template-columns: 75% 25%;
+    /* ---- KURV ---- */
+    
+    #containerkurv{
+        display: flex;
+        width: 100%;
+        align-items: center;
     }
     
-    #containerfooter{
+    #flexpris{
+        width: 60%;
+    }
+    
+    .overskriftpris{
+        font-size: 150%;
+        margin: 30px 0 0 25%;
+    }
+    
+    #samletpris{
+        margin-left: 15%;    
+    }
+    
+    #videre{
+        width: 40%;
+        margin-right: 10%;
+    }
+    
+    #tilfreds, #fortsæt{
+        text-align: center;
+        margin-left: 0;
         font-size: 100%;
     }
     
-    #containersome{
+    #betal{
+        width: 50%;
+        margin: 10px 25%;
+    }
+    
+    #betal:hover{
+        opacity: 0.8;
+    }
+    
+    #tilfreds{
+        font-size: 115%;
+    }
+
+    /* --- FOOTER --- */
+    #laptopfooter {
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
+    #containerfooter {
+        font-size: 100%;
+    }
+
+    #containersome {
         font-size: 90%;
         padding: 0 25% 0 0;
         align-items: center;
     }
-    
-    .someicon{
+
+    .someicon {
         width: 50px;
     }
-    
+
 }
 
 @media only screen and (min-width: 1180px) {
@@ -558,26 +602,36 @@ body {
         width: 100%;
     }
 
+    /* KURV */
     
-    /* FOOTER */
+    #betal{
+        width: 40%;
+        margin: 10px 30%;
+        padding: 15px 10px;
+    }
+    
+    #betal:hover{
+        opacity: 0.8;
+    }
 
-        #laptopfooter{
+    /* FOOTER */
+    #laptopfooter {
         display: grid;
         grid-template-columns: 75% 25%;
     }
-    
-    #containerfooter{
+
+    #containerfooter {
         font-size: 150%;
     }
-    
-    #containersome{
+
+    #containersome {
         font-size: 90%;
         padding: 0 25% 0 0;
         align-items: center;
     }
-    
-    .someicon{
+
+    .someicon {
         width: 70px;
     }
-    
+
 }
