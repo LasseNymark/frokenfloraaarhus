@@ -59,7 +59,7 @@ body {
 /* ---- SECTION 1 - Introtekst ---- */
 
 #sec1 {
-    background-image: url(../images/flowers.jpg);
+    background-image: url(../images/cover.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,6 +73,7 @@ body {
 #sec1 p {
     padding: 0 45px 25px;
     color: #fff;
+    line-height: 1.7;
 }
 
 /* ---- BUKETTER ---- */
@@ -381,8 +382,8 @@ body {
 
     /* --- INTROTEKST OG BILLEDE --- */
     #sec1 {
-        background-image: url(../images/flowers.jpg);
-        height: 220px;
+        background-image: url(../images/cover.png);
+        height: 250px;
     }
 
     #sec1 h1 {
