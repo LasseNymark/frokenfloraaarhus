@@ -12,7 +12,7 @@ function totalIt()
          total += parseFloat(input[i].value);
       }
    }
-   document.getElementById("total").value = "kr " + total.toFixed(2);
+   document.getElementById("total").value = total.toFixed(2) + " kr";
 }
 
 // PRIS

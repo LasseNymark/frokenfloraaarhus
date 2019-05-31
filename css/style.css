@@ -286,34 +286,32 @@ body {
     margin-bottom: 20px;
 }
 
-#kurvindhold{
+#kurvindhold {
     margin: 0 15%;
     color: #7A827D;
 }
 
-.tilvalgnone{
+.tilvalgnone {
     display: none;
     color: #7A827D;
     margin: 10px 0px 10px 70px;
     float: right;
-    font-size: 80%;
 }
 
-
-#kurvnuance, #kurvbuket, #kurvstørrelse{
+#kurvnuance,
+#kurvbuket,
+#kurvstørrelse {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
 }
 
-
-
-
-
-
-
-
+#kurvnuance p,
+#kurvbuket p,
+#kurvstørrelse p {
+    margin: 5px 0;
+}
 
 #betal {
     background-color: #E1BC9F;
@@ -325,7 +323,7 @@ body {
     box-shadow: 0px 3px 10px grey;
 }
 
-#tilfreds{
+#tilfreds {
     margin-top: 0;
     font-weight: 600;
 }
@@ -535,49 +533,49 @@ body {
     .containertilvalg:hover input ~ .imgtilvalg {
         opacity: 0.7;
     }
-    
+
     /* ---- KURV ---- */
-    
-    #containerkurv{
+    #containerkurv {
         display: flex;
         width: 100%;
         align-items: center;
     }
-    
-    #flexpris{
+
+    #flexpris {
         width: 60%;
     }
-    
-    .overskriftpris{
+
+    .overskriftpris {
         font-size: 150%;
         margin: 30px 0 0 25%;
     }
-    
-    #samletpris{
-        margin-left: 15%;    
+
+    #samletpris {
+        margin-left: 15%;
     }
-    
-    #videre{
+
+    #videre {
         width: 40%;
         margin-right: 10%;
     }
-    
-    #tilfreds, #fortsæt{
+
+    #tilfreds,
+    #fortsæt {
         text-align: center;
         margin-left: 0;
         font-size: 100%;
     }
-    
-    #betal{
+
+    #betal {
         width: 50%;
         margin: 10px 25%;
     }
-    
-    #betal:hover{
+
+    #betal:hover {
         opacity: 0.8;
     }
-    
-    #tilfreds{
+
+    #tilfreds {
         font-size: 115%;
     }
 
@@ -637,14 +635,13 @@ body {
     }
 
     /* KURV */
-    
-    #betal{
+    #betal {
         width: 40%;
         margin: 10px 30%;
         padding: 15px 10px;
     }
-    
-    #betal:hover{
+
+    #betal:hover {
         opacity: 0.8;
     }
 
