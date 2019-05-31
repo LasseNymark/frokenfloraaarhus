@@ -10,5 +10,5 @@ function totalIt()
          total += parseFloat(input[i].value);
       }
    }
-   document.getElementById("total").value = "Dkk " + total.toFixed(2);
+   document.getElementById("total").value = "kr " + total.toFixed(2);
 }

@@ -254,6 +254,49 @@ body {
     filter: brightness(60%);
 }
 
+/* ---- KURV ---- */
+
+#containerpris{
+    display: flex;
+    width: 70%;
+    margin: 5% 15%;
+}
+
+#samletpris{
+    width: 70%;
+    color: #313831;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.pris{
+    width: 30%;
+    border: none;
+    color: #313831;
+    font-weight: 500;
+    font-size: 110%;
+}
+
+.overskriftpris{
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#betal{
+    background-color: #E1BC9F;
+    color: #fff;
+    width: 30%;
+    padding: 10px 15px;
+    border: none;
+    margin: 10px 35% 30px;
+    box-shadow: 0px 3px 10px grey;
+}
+
+
+
+
+
+
 /* ---- FOOTER - Kontaktinfo og SoMe Links ---- */
 
 #containerfooter {
@@ -460,6 +503,26 @@ body {
     }
 
     /* --- FOOTER --- */
+    
+    #laptopfooter{
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+    
+    #containerfooter{
+        font-size: 100%;
+    }
+    
+    #containersome{
+        font-size: 90%;
+        padding: 0 25% 0 0;
+        align-items: center;
+    }
+    
+    .someicon{
+        width: 50px;
+    }
+    
 }
 
 @media only screen and (min-width: 1180px) {
@@ -495,5 +558,26 @@ body {
         width: 100%;
     }
 
+    
+    /* FOOTER */
 
+        #laptopfooter{
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+    
+    #containerfooter{
+        font-size: 150%;
+    }
+    
+    #containersome{
+        font-size: 90%;
+        padding: 0 25% 0 0;
+        align-items: center;
+    }
+    
+    .someicon{
+        width: 70px;
+    }
+    
 }
