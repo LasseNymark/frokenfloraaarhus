@@ -3,9 +3,9 @@
 
 function totalIt()
 {
-   var input = document.getElementsByName("product");
-   var total = 0;
-   for (var i = 0; i < input.length; i++)
+   let input = document.getElementsByName("product");
+   let total = 0;
+   for (let i = 0; i < input.length; i++)
    {
       if (input[i].checked)
       {
@@ -134,9 +134,9 @@ function tilvalg1() {
 function tilvalg2() {
     
     // checkbox findes her
-  var kort = document.getElementById("kurvkort");
+  let kort = document.getElementById("kurvkort");
     //Der hvor teksten skal ind findes her
-  var text2 = document.getElementById("spankort");
+  let text2 = document.getElementById("spankort");
     //Tilføjer/fjerner stylingen block og none
   if (kort.checked == true){
     text2.style.display = "block";
@@ -150,9 +150,9 @@ function tilvalg2() {
 function tilvalg3() {
     
     // checkbox findes her
-  var chokolade = document.getElementById("kurvchokolade");
+  let chokolade = document.getElementById("kurvchokolade");
     //Der hvor teksten skal ind findes her
-  var text3 = document.getElementById("spanchokolade");
+  let text3 = document.getElementById("spanchokolade");
     //Tilføjer/fjerner stylingen block og none
   if (chokolade.checked == true){
     text3.style.display = "block";
@@ -166,9 +166,9 @@ function tilvalg3() {
 function tilvalg4() {
     
     // checkbox findes her
-  var vin = document.getElementById("kurvvin");
+  let vin = document.getElementById("kurvvin");
     //Der hvor teksten skal ind findes her
-  var text4 = document.getElementById("spanvin");
+  let text4 = document.getElementById("spanvin");
     //Tilføjer/fjerner stylingen block og none
   if (vin.checked == true){
     text4.style.display = "block";
@@ -182,9 +182,9 @@ function tilvalg4() {
 function tilvalg5() {
     
     // checkbox findes her
-  var specialøl = document.getElementById("kurvspecialøl");
+  let specialøl = document.getElementById("kurvspecialøl");
     //Der hvor teksten skal ind findes her
-  var text5 = document.getElementById("spanspecialøl");
+  let text5 = document.getElementById("spanspecialøl");
     //Tilføjer/fjerner stylingen block og none
   if (specialøl.checked == true){
     text5.style.display = "block";
