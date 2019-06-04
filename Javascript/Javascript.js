@@ -1,4 +1,45 @@
-  
+const doc = document;
+
+fetch('json/virksomheden.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(json => {
+    console.log(json);
+    appendKontakter(json.kontakt);
+    appendÅbningstider(json.åbningstider)
+  });
+
+function appendKontakter(kontakt) {
+    console.log(kontakt);
+    //creating company data, HTML tags and adding to the DOM, the element #gridKontakter
+    doc.querySelector("#gridKontakter").innerHTML += `
+      <article class="gridItem1">
+          <h4>${kontakt.område1}</h4>
+          <p>${kontakt.name}</p>
+          <p>${kontakt.adresse}</p>
+          <p>${kontakt.by}</p>
+          <p>${kontakt.tlf}</p>
+          <p>${kontakt.mail}</p>
+      </article>
+      `;
+}
+
+function appendÅbningstider(åbningstider) {
+    console.log(åbningstider);
+    //creating company data, HTML tags and adding to the DOM, the element #gridKontakter
+    doc.querySelector("#gridÅbningstider").innerHTML += `
+      <article class="gridItem2">
+          <h4>${åbningstider.område2}</h4>
+          <p>${åbningstider.Mantors}</p>
+          <p>${åbningstider.Fre}</p>
+          <p>${åbningstider.Lør}</p>
+          <p>${åbningstider.Sønhel}</p>
+          <p>${åbningstider.Mærkedage}</p>
+      </article>
+      `;
+  }
+
 // SAMLEDE PRIS - lommeregner
 
 function totalIt()

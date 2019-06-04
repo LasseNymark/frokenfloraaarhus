@@ -331,49 +331,52 @@ body {
 
 /* ---- FOOTER - Kontaktinfo og SoMe Links ---- */
 
-#containerfooter {
-    background-color: #636A66;
-    font-weight: 200;
-}
-
-#containerfooter {
+#gridContainerfooter {
     display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 5%;
-    padding: 5% 5% 5% 10%;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 70% 25%;
+    grid-gap: 5%;
     justify-content: center;
-}
-
-#containerkontakt,
-#containeråbningstider {}
-
-.overskriftfooter {
-    font-size: 110%;
+    background-color: #636A66;
     color: #fff;
 }
 
-.footertekst {
-    color: #fff;
+#gridKontakter {
+    margin-top: 20px;
+    font-weight: 200;
+    width: 40%;
+}
+
+#gridKontakter h4,
+#gridÅbningstider h4 {
+    font-size: 90%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#gridKontakter p,
+#gridÅbningstider p {
     font-size: 70%;
-    margin: 2% 0;
+    width: 150px;
 }
 
-.footertekst a {
-    color: #fff;
+#gridÅbningstider {
+    margin-top: 20px;
+    font-weight: 200;
+    width: 40%;
 }
 
 /* SOME ikoner */
 
 #containersome {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 10%;
-    background-color: #636A66;
-    padding: 0 25% 5%;
+    width: 150px;
+    margin: 0 55%;
 }
 
 .someicon {
-    width: 50px;
+    margin: 0 0 10px 25px;
+    width: 40px;
+    margin-top: 15px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -536,7 +539,6 @@ body {
     }
 
     /* ---- KURV ---- */
-    
     #containerkurv {
         display: flex;
         width: 100%;
@@ -581,31 +583,74 @@ body {
     #tilfreds {
         font-size: 115%;
     }
-    
-    #total{
+
+    #total {
         margin: 25px 0;
     }
 
     /* --- FOOTER --- */
-    #laptopfooter {
-        display: grid;
-        grid-template-columns: 75% 25%;
-    }
+    
+#gridContainerfooter {
+    display: grid;
+    grid-template-columns: 30% 30% 20%;
+    grid-template-rows: 100%;
+    grid-gap: 5%;
+    justify-content: center;
+    background-color: #636A66;
+    color: #fff;
+}
 
-    #containerfooter {
-        font-size: 100%;
-    }
+#gridKontakter {
+    font-weight: 200;
+    margin: 20px 50px 30px 100px;
+}
 
-    #containersome {
-        font-size: 90%;
-        padding: 0 25% 0 0;
-        align-items: center;
-    }
+#gridKontakter h4,
+#gridÅbningstider h4 {
+    font-size: 110%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
 
-    .someicon {
-        width: 50px;
-    }
+#gridKontakter p,
+#gridÅbningstider p {
+    font-size: 90%;
+    width: 250px;
+}
 
+#gridÅbningstider {
+    font-weight: 200;
+    width: 40%;
+    margin: 20px 50px 30px 100px;
+}
+
+/* SOME ikoner */
+
+#containersome {
+    width: auto;
+    align-items: center;
+    margin-top:45%;
+    height: 50%;
+}
+
+.someicon {
+    width: 40px;
+}
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 @media only screen and (min-width: 1180px) {
@@ -651,34 +696,31 @@ body {
     #betal:hover {
         opacity: 0.8;
     }
-    
-    #kurvindhold{
+
+    #kurvindhold {
         margin-left: 25%;
     }
-    
-    .tilvalgnone{
+
+    .tilvalgnone {
         float: right;
         margin-left: 50%;
     }
 
     /* FOOTER */
-    #laptopfooter {
-        display: grid;
-        grid-template-columns: 75% 25%;
-    }
 
-    #containerfooter {
-        font-size: 150%;
-    }
+    /* SOME ikoner */
 
-    #containersome {
-        font-size: 90%;
-        padding: 0 25% 0 0;
-        align-items: center;
-    }
+#containersome {
+    width: auto;
+    align-items: center;
+    margin-top:30%;
+    height: 50%;
+}
 
-    .someicon {
-        width: 70px;
-    }
+.someicon {
+    width: 40px;
+}
+    
+    
 
 }

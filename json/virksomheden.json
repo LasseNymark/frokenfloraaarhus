@@ -1,0 +1,20 @@
+{
+  "kontakt": {
+    "område1": "kontakt",
+    "name": "Frøken Flora",
+    "adresse": "Nørregade 53",
+    "by": "8000 Aarhus C",
+    "tlf": "Tlf. 86 12 60 15",
+    "mail": "flora@interflora.dk"
+  },
+   "åbningstider":{
+    "område2": "åbningstider",
+    "Mantors": "Man - Tors: 10.00 - 17.30",
+    "Fre": "Fre: 10.00 - 18.00",
+    "Lør": "Lør: 10.00 - 14.00",
+    "Sønhel": "Søn og helligdage: Lukket",
+    "Mærkedage": "Mærkedage: 10.00 - 15.00"
+   }
+}
+
+

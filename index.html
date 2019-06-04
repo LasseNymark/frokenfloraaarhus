@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Førken Flora - Aarhus</title>
+    <title>Frøken Flora - Aarhus</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700&display=swap" rel="stylesheet">
     <script src="Javascript/Javascript.js"></script>
@@ -55,7 +55,7 @@
 
             <!-- Buket 1 - Den høje - fra 175 kr -->
 
-        <label onclick="buket1()" class="containerbuketter">
+            <label onclick="buket1()" class="containerbuketter">
             <input name="product" value="175" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket1.jpg" alt="høj buket">
             <span class="buketbeskrivelse">Den høje <span class="buketpris"> - fra 175 kr </span></span>
@@ -63,7 +63,7 @@
 
             <!-- Buket 2 - Den tætte - fra 250 kr -->
 
-        <label onclick="buket2()" class="containerbuketter">
+            <label onclick="buket2()" class="containerbuketter">
             <input name="product" value="250" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket2.jpg" alt="tæt buket">
             <span class="buketbeskrivelse">Den tætte <span class="buketpris"> - fra 250 kr </span></span>
@@ -71,7 +71,7 @@
 
             <!-- Buket 3 - Den vilde - fra 300 kr -->
 
-        <label onclick="buket3()" class="containerbuketter">
+            <label onclick="buket3()" class="containerbuketter">
             <input name="product" value="300" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket3.jpg" alt="vild buket">
             <span class="buketbeskrivelse">Den vilde <span class="buketpris"> - fra 300 kr </span></span>
@@ -79,7 +79,7 @@
 
             <!-- Buket 4 - Den løse - fra 200 kr -->
 
-        <label onclick="buket4()" class="containerbuketter">
+            <label onclick="buket4()" class="containerbuketter">
             <input name="product" value="200" type="radio" onclick="totalIt()"/>
             <img class="imgbuket" src="images/buket4.jpg" alt="løs buket">
             <span class="buketbeskrivelse">Den løse <span class="buketpris"> - fra 200 kr </span></span>
@@ -102,7 +102,7 @@
 
             <!-- Dekoratørens valg -->
 
-        <label onclick="nuance1()" class="containernuancer">
+            <label onclick="nuance1()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/bl%C3%A5lilla.png" alt="dekoratørens valg">
             <span class="nuancerbeskrivelse">Dekoratørens <br>valg </span>
@@ -110,7 +110,7 @@
 
             <!-- Blålilla/hvide nuancer valg -->
 
-        <label onclick="nuance2()" class="containernuancer">
+            <label onclick="nuance2()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/bl%C3%A5lilla.png" alt="blålilla/hvide nuancer">
             <span class="nuancerbeskrivelse">Blålilla/hvide <br> nuancer</span>
@@ -134,7 +134,7 @@
 
             <!-- Lime/Rosa nuancer -->
 
-        <label onclick="nuance5()" class="containernuancer">
+            <label onclick="nuance5()" class="containernuancer">
             <input name="product" value="0" type="radio" onclick="totalIt()"/>
             <img class="imgnuancer" src="images/lime.png" alt="lime/rosa nuancer">
             <span class="nuancerbeskrivelse">Lime/rosa <br> nuancer</span>
@@ -228,10 +228,10 @@
         <form id="grid-tilvalg">
 
             <!-- Tilvalg 1 - Flag - +20kr -->
-            
-            
 
-        <label class="containertilvalg">
+
+
+            <label class="containertilvalg">
             <input id="kurvflag" name="product" value="20" type="checkbox" onclick="totalIt(); tilvalg1();"/>
             <img class="imgtilvalg" src="images/flag2.png" alt="tilvælg flag">
             <span class="tilvalgbeskrivelse">Flag +20 kr</span>
@@ -258,7 +258,7 @@
 
             <!-- Tilvalg 4 - Vin - +75kr -->
 
-        <label class="containertilvalg">
+            <label class="containertilvalg">
             <input id="kurvvin" name="product" value="75" type="checkbox" onclick="totalIt(); tilvalg4();"/>
             <img class="imgtilvalg" src="images/vin2.png" alt="tilvælg vin">
             <span class="tilvalgbeskrivelse">Vin +75 kr</span>
@@ -281,22 +281,22 @@
     <!-- SAMLEDE PRIS/ KURV -->
 
     <div id="containerkurv">
-        
+
         <div id="flexpris" class="flexkurv">
 
             <h3 class="overskrift overskriftpris">Din indkøbskurv</h3>
 
-               <div id="kurvindhold">
-               
+            <div id="kurvindhold">
+
                 <p id="kurvbuket">Bukettype: </p>
 
                 <p id="kurvnuance">Nuance: </p>
 
                 <p id="kurvstørrelse">Størrelse: </p>
-                
+
                 <p id="kurvtilvalg">Tilvalg: <span class="tilvalgnone" id="spanflag">+ Flag 20 kr</span> <span class="tilvalgnone" id="spankort">+ Kort 20 kr</span> <span class="tilvalgnone" id="spanchokolade">+ Chokolade 50 kr</span> <span class="tilvalgnone" id="spanvin">+ Vin 75 kr</span> <span class="tilvalgnone" id="spanspecialøl">+ Specialøl 50 kr</span> </p>
-                
-                </div>
+
+            </div>
 
             <div id="containerpris">
 
@@ -307,7 +307,7 @@
                 <input class="pris" value="0.00 kr" readonly="readonly" type="text" id="total" />
 
             </div>
-        
+
         </div>
 
         <!-- KLIK VIDERE -->
@@ -326,42 +326,12 @@
 
     <footer>
 
-        <div id="laptopfooter">
+        <div id="gridContainerfooter">
 
-            <!-- KONTAKTOPLYSNINGER -->
+            <section id="gridKontakter"></section>
 
-            <div id="containerfooter">
-
-                <div id="containerkontakt">
-
-                    <p class="overskriftfooter">Kontakt</p>
-
-                    <p class="footertekst">Frøken Flora</p>
-                    <p class="footertekst">Nørregade 53</p>
-                    <p class="footertekst">8000 Aarhus C</p>
-                    <p class="footertekst">Tlf. 86 12 60 15</p>
-                    <p class="footertekst"><a href="mailto:frokenflora@interflora.dk" target="_top">frokenflora@interflora.dk</a></p>
-
-                </div>
-
-                <div id="containeråbningstider">
-
-                    <p class="overskriftfooter">Åbningstider</p>
-
-                    <p class="footertekst">Man - tors: 10.00 - 17.30</p>
-                    <p class="footertekst">Fre: 10.00 - 18.00</p>
-                    <p class="footertekst">Lør: 10.00 - 14.00</p>
-                    <p class="footertekst">Søn og helligdage: Lukket</p>
-                    <p class="footertekst">Mærkedage: 10.00 - 15.00</p>
-
-                </div>
-
-
-
-            </div>
-
-            <!-- SOME -->
-
+            <section id="gridÅbningstider"></section>
+            
             <div id="containersome">
 
                 <a class="icon" href="https://www.facebook.com/Fr%C3%B8ken-Flora-226339657405094/?__tn__=%2Cd%2CP-R&eid=ARDm0WUuatNc7YjHvY1BuzbOyqOTbv_3A5XMGQJQn_nsE6DHbCIl5Rf4XC12Xr7E_DzL5XRDViJ5AsWP" target="_blank"><img class="someicon" src="images/facebook.png" alt="facebook logo"></a>
@@ -371,6 +341,10 @@
             </div>
 
         </div>
+
+        <!-- SOME -->
+
+ 
 
     </footer>
 
