@@ -12,7 +12,7 @@ fetch('json/virksomheden.json')
 
 function appendKontakter(kontakt) {
     console.log(kontakt);
-    //creating company data, HTML tags and adding to the DOM, the element #gridKontakter
+    //Laver data, HTML-tags der tilføjes til DOM'en - og indsættes i grid
     doc.querySelector("#gridKontakter").innerHTML += `
       <article class="gridItem1">
           <h4>${kontakt.område1}</h4>
